@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(161, 88, 230);
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22)
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Segundo exercício do curso de JavaScript.</p>
+    <script>
+        // DIFERENÇA ENTRE CONCATENAÇÃO E SOMA
+
+        /*
+        var n1 = window.prompt('Digite um número:')
+        var n2 = window.prompt('Digite outro número:')
+        var s = n1 + n2
+        window.alert('A soma dos números é igual a' + s)
+        */
+
+        /* 
+        - a função window.prompt recebe sempre String
+        - o sinal de + entre Strings é igual a Concatenação
+        - o sinal de + entre Numbers é igual a Soma
+        - logo, nesse exemplo, ele irá concatenar os números.
+        */
+
+        // CONVERSÕES DE STRINGS para Tipos de NUMBER
+
+        /*
+        var n1 = Number.parseInt(window.prompt('Digite um número:')) //comando para transformar String em número Inteiro
+        var n2 = Number.parseFloat(window.prompt('Digite outro número:')) //comando para transformar String em número Real (decimal)
+        var s = n1 + n2
+        window.alert('A soma dos números é igual a ' + s)
+        */
+
+        /*
+        - Number.parseInt() transforma String em número Inteiro
+        - Number.parseFloa() transforma String em número Real/Decimal
+        - Number() transforma String tanto em número Inteiro como em Real
+        */
+
+        // CONVERSÃO DE STRING para NUMBER
+
+        /*
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var s = n1 + n2
+        window.alert('O resultado da soma é: ' + s)
+        */
+
+        // - a formatação da String na função Alert foi de Concatenação
+
+        var n1 = Number(prompt('Digite um número:'))
+        var n2 = Number(prompt('Digite outro número'))
+        var s = n1 + n2
+        alert(`A soma de ${n1} com ${n2} é igual a ${s}.`) //usando Template Strings (funciona apenas com crase) com Place Holder ${var}
+    </script>
+</body>
+</html>
